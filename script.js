@@ -22,3 +22,8 @@ function XO(str) {
     return false;
   }
 }
+
+//Simple, given a string of words, return the length of the shortest word(s).
+function findShort(s){
+  return s.split(' ').map(s => s.length).reduce((a, b) => Math.min(a, b));  
+}
